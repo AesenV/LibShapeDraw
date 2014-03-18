@@ -72,7 +72,7 @@ public class ApiInfo {
         urlMain = validUrl(props.getProperty("url-main"));
         urlShort = validUrl(props.getProperty("url-short"));
         urlSource = validUrl(props.getProperty("url-source"));
-        urlUpdate = validUrl(props.getProperty("url-update"));
+        urlUpdate = null;
         authors = notNull(props.getProperty("authors"));
     }
 

@@ -19,6 +19,7 @@ import net.minecraft.profiler.Profiler;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.Timer;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -43,7 +44,7 @@ import cpw.mods.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent;
  * this class, making the LibShapeDraw API itself clean and free of obfuscated
  * code. (There is a single exception: LSDModDirectory.getMinecraftDir.)
  */
-@Mod(modid = "LibShapeDraw", name = "LibShapeDraw")
+@Mod(modid = "LibShapeDraw", name = "LibShapeDraw", version="1.4-SNAPSHOT")
 public class LibShapeDrawMod implements MinecraftAccess {
     /**
      * Install our render hook by inserting a proxy for Minecraft.mcProfiler.
@@ -162,6 +163,7 @@ public class LibShapeDrawMod implements MinecraftAccess {
         
         installRenderHook();
         MinecraftForge.EVENT_BUS.register(this);
+        FMLCommonHandler.instance().bus().register(this);
         LSDController.getLog().info(getClass().getName() + " loaded");
     }
 
@@ -183,6 +185,7 @@ public class LibShapeDrawMod implements MinecraftAccess {
         // Copy all vanilla-defined field values from the original profiler to
         // the new proxy.
         for (Field f : vanillaClass.getDeclaredFields()) {
+        	if ("__OBFID".equals(f.getName()) || "field_151234_b".equals(f.getName())) continue;
             f.setAccessible(true);
             Object origValue = LSDUtil.getFieldValue(f, proxy.orig);
             LSDUtil.setFinalField(f, proxy, origValue);
@@ -225,6 +228,9 @@ public class LibShapeDrawMod implements MinecraftAccess {
     public void onTickInGame(TickEvent te) {
         if (te.phase != TickEvent.Phase.START || te.type != TickEvent.Type.CLIENT) {
             return;
+        }
+        if (minecraft.theWorld == null || minecraft.thePlayer == null) {
+        	return;
         }
         final ReadonlyVector3 playerCoords = getPlayerCoords();
 
