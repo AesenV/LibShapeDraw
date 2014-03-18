@@ -1,4 +1,4 @@
-Quick links: [ [For Developers](#for-developers) | [Javadocs](http://bencvt.github.com/LibShapeDraw/apidocs/index.html) | [Demos](https://github.com/bencvt/LibShapeDraw/tree/master/projects/demos/src/main/java/libshapedraw/demos) | [Downloads](https://github.com/bencvt/LibShapeDraw/downloads) | [Cutting-Edge Downloads](https://ci.gameminers.com/LibShapeDraw) ]
+Quick links: [ [For Developers](#for-developers) | [Javadocs](http://bencvt.github.com/LibShapeDraw/apidocs/index.html) | [Demos](https://github.com/bencvt/LibShapeDraw/tree/master/projects/demos/src/main/java/libshapedraw/demos) | [Downloads](https://github.com/bencvt/LibShapeDraw/downloads) | [Cutting-Edge Downloads](http://ci.gameminers.com/LibShapeDraw) ]
 
 # For Players
 
