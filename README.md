@@ -1,4 +1,4 @@
-Quick links: [ [For Developers](#for-developers) | [Javadocs](http://bencvt.github.com/LibShapeDraw/apidocs/index.html) | [Demos](https://github.com/bencvt/LibShapeDraw/tree/master/projects/demos/src/main/java/libshapedraw/demos) | [Downloads](https://github.com/bencvt/LibShapeDraw/downloads) ]
+Quick links: [ [For Developers](#for-developers) | [Javadocs](http://bencvt.github.com/LibShapeDraw/apidocs/index.html) | [Demos](https://github.com/bencvt/LibShapeDraw/tree/master/projects/demos/src/main/java/libshapedraw/demos) | [Downloads](https://github.com/bencvt/LibShapeDraw/downloads) | [Cutting-Edge Downloads](https://ci.gameminers.com/LibShapeDraw) ]
 
 # For Players
 
@@ -7,38 +7,20 @@ It doesn't do anything on its own. Rather, it provides a set of flexible and
 powerful drawing and animation tools for those other mods to use.
 
 See the [official LibShapeDraw thread on minecraftforum.net](http://www.minecraftforum.net/topic/1458931-libshapedraw/)
-for some screenshots and videos of what sort visual effects are possible.
+for some screenshots and videos of what sort visual effects are possible. Please note that these are somewhat out-of-date,
+but still relevant.
 
 ## Installation
 
-First of all, make sure that either
-[ModLoader](http://www.minecraftforum.net/topic/75440-modloader/) or
-[Forge](http://www.minecraftforge.net/forum/) is installed. LibShapeDraw is
-compatible with either.
+First of all, make sure that [Forge](http://www.minecraftforge.net/forum/) is installed. LibShapeDraw requires it.
 
-Next, download the jar and do one of the following, whichever you prefer:
-
- +  **Use a launcher utility to add the jar (recommended).** There are many
-    launchers out there, e.g.
-    [Magic Launcher](http://www.minecraftforum.net/topic/939149-magiclauncher/).
-
-OR
-
- +  **Move the jar file to the `coremods` subdirectory.** This subdirectory can
-    be found in your
-    [Minecraft directory](http://www.minecraftwiki.net/wiki/.minecraft).
-    If you use ModLoader rather than Forge, use the `mods` subdirectory instead.
-
-OR
-
- +  **Manually patch the contents of the jar file into your `minecraft.jar`.**
-    Old-school modding still works. Be sure to remove the `META-INF` folder.
+Next, download the jar and place it in the `mods` directory.
 
 ## Compatibility
 
 LibShapeDraw was designed with compatibility in mind. It does not modify *any*
 vanilla classes directly and therefore should be compatible with virtually every
-mod that works with ModLoader or Forge.
+mod that works with Forge.
 
 ## Troubleshooting
 
@@ -77,8 +59,7 @@ for you:
 LibShapeDraw is designed to be easy to use, both for devs and for players. These
 are the design goals to that end:
 
- +  **Minimal dependencies.** Either ModLoader or Forge is required to get up
-    and running. That's all.
+ +  **Minimal dependencies.** Forge is required to get up and running. That's all.
 
  +  **Maximal compatibility.** LibShapeDraw does not modify the bytecode of
     *any* vanilla Minecraft class. You are free to modify Minecraft classes in
@@ -136,6 +117,8 @@ Here's a quick example:
 
 ## How to add the LibShapeDraw jar to the classpath in MCP
 
+**This needs updating for ForgeGradle**
+
 [Minecraft Coder Pack (MCP)](http://mcp.ocean-labs.de/index.php/MCP_Releases)
 is an excellent tool for creating mods, letting you work with deobfuscated
 Minecraft code. Using external libraries (such as LibShapeDraw) involves a few
@@ -169,18 +152,18 @@ extra steps:
 
 ## Documentation
 
- +  [Javadocs](http://bencvt.github.com/LibShapeDraw/apidocs/index.html) are
+ +  [Javadocs](http://ci.gameminers.com/LibShapeDraw1.7/javadoc) are
     available.
 
- +  [Browse the demos](https://github.com/bencvt/LibShapeDraw/tree/master/projects/demos/src/main/java/libshapedraw/demos),
+ +  [Browse the demos](https://github.com/AesenV/LibShapeDraw-1.7/tree/master/projects/demos/src/main/java/libshapedraw/demos),
     located in `projects/demos`. To see the demos in action, you can
-    [download](https://github.com/bencvt/LibShapeDraw/downloads) the pre-built
+    [download](https://github.com/AesenV/LibShapeDraw-1.7/downloads) the pre-built
     demos jar and install it like any other mod.
 
- +  See [README-Trident.md](https://github.com/bencvt/LibShapeDraw/blob/master/README-Trident.md)
+ +  See [README-Trident.md](https://github.com/AesenV/LibShapeDraw-1.7/blob/master/README-Trident.md)
     for information about the built-in Trident animation library.
 
- +  See [README-contributing.md](https://github.com/bencvt/LibShapeDraw/blob/master/README-contributing.md)
+ +  See [README-contributing.md](https://github.com/AesenV/LibShapeDraw-1.7/blob/master/README-contributing.md)
     for information about contributing to LibShapeDraw itself, including build
     instructions and a list of features planned for future releases.
 
@@ -188,11 +171,13 @@ extra steps:
 
 ## Contact
 
-This project's official GitHub repo is located at
+The original project, managed by bencvt, can be found at
 [github.com/bencvt/LibShapeDraw](https://github.com/bencvt/LibShapeDraw).
+
+The current project, maintained by Aesen, can be found at
+[github.com/AesenV/LibShapeDraw-1.7](https://github.com/AesenV/LibShapeDraw-1.7).
 Anyone is free to open an issue.
 
-You can also try the [official LibShapeDraw thread on minecraftforum.net](http://www.minecraftforum.net/topic/1458931-libshapedraw/).
-
-Finally, feel free to ping me (bencvt) in IRC. I'm often lurking in various
-channels related to Minecraft development on esper.net and freenode.net.
+If you're more the type for live support, ping aesen on the VoltIRC or freenode IRC
+networks. There's bound to be a #augment or #libshapedraw eventually, so try joining
+those channels for a bit of coordination.

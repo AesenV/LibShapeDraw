@@ -1,3 +1,7 @@
+**Fair warning:** The Maven POM is unmaintained since Aesen believes Maven is
+demonspawn. If you feel you're up to the task of fixing it to work with
+ForgeGradle, then by all means make a pull request.
+
 If you're attempting to build LibShapeDraw from source you will need to place
 several jars in this directory:
 
