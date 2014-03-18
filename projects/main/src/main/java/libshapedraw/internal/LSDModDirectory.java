@@ -26,22 +26,7 @@ import net.minecraft.client.Minecraft;
 public class LSDModDirectory {
     public static final File DIRECTORY = new File(getMinecraftDir(), "mods" + File.separator + ApiInfo.getName());
 
-    /**
-     * Use reflection to invoke the static method. This supports both normal
-     * play (reobfuscated minecraft.jar) and development (deobfuscated classes
-     * in MCP).
-     */
     private static File getMinecraftDir() {
-        try {
-            Method m;
-            try {
-                m = Minecraft.class.getMethod("b");
-            } catch (NoSuchMethodException e) {
-                m = Minecraft.class.getMethod("getMinecraftDir");
-            }
-            return (File) m.invoke(null);
-        } catch (Exception e) {
-            throw new LSDInternalReflectionException("unable to invoke Minecraft.getMinecraftDir", e);
-        }
+    	return Minecraft.getMinecraft().mcDataDir;
     }
 }
