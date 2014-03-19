@@ -1,6 +1,5 @@
+[
 {
-  "modinfoversion": 2,
-  "modlist": [{
     "modid": "LibShapeDraw",
     "name": "LibShapeDraw",
     "description": "LibShapeDraw is an open-source API mod that provides a set of flexible and powerful drawing and animation tools for other Minecraft client mods to use.",
@@ -17,5 +16,5 @@
     "dependencies": [],
     "dependants": [],
     "useDependencyInformation": "true"
-  }]
-}
+  }
+]
