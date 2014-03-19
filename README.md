@@ -1,4 +1,4 @@
-Quick links: [ [For Developers](#for-developers) | [Javadocs](http://bencvt.github.com/LibShapeDraw/apidocs/index.html) | [Demos](https://github.com/bencvt/LibShapeDraw/tree/master/projects/demos/src/main/java/libshapedraw/demos) | [Downloads](https://github.com/bencvt/LibShapeDraw/downloads) | [Cutting-Edge Downloads](http://ci.gameminers.com/LibShapeDraw) ]
+Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gameminers.com/LibShapeDraw/javadoc) | [Downloads](https://github.com/AesenV/LibShapeDraw-1.7/downloads) | [Cutting-Edge Downloads](http://ci.gameminers.com/LibShapeDraw) ]
 
 # For Players
 
@@ -126,7 +126,7 @@ extra steps:
 
 1.  **Get a copy of a LibShapeDraw release jar.** You can use either the normal
     release or the special dev release (named `LibShapeDraw-VERSION-dev.jar`).
-    Check the [downloads list](https://github.com/bencvt/LibShapeDraw/downloads)
+    Check the [downloads list](https://github.com/AesenV/LibShapeDraw-1.7/downloads)
     for the latest.
     
     The dev release is recommended: either release type will work for
@@ -178,6 +178,5 @@ The current project, maintained by Aesen, can be found at
 [github.com/AesenV/LibShapeDraw-1.7](https://github.com/AesenV/LibShapeDraw-1.7).
 Anyone is free to open an issue.
 
-If you're more the type for live support, ping aesen on the VoltIRC or freenode IRC
-networks. There's bound to be a #augment or #libshapedraw eventually, so try joining
-those channels for a bit of coordination.
+If you're more the type for live support, ping aesen on the FreeNode IRC, or join
+the #augment channel there.
