@@ -332,14 +332,14 @@ public class LibShapeDrawMod implements MinecraftAccess {
         final boolean visible = chatWindowExists();
         LSDController.getLog().info("sendChatMessage visible=" + visible + " message=" + message);
         if (visible) {
-            minecraft.ingameGUI.func_146158_b().func_146227_a(new ChatComponentText(message));
+            minecraft.ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(message));
         }
         return this;
     }
 
     @Override
     public boolean chatWindowExists() {
-        return minecraft != null && minecraft.ingameGUI != null && minecraft.ingameGUI.func_146158_b() != null;
+        return minecraft != null && minecraft.ingameGUI != null && minecraft.ingameGUI.getChatGUI() != null;
     }
 
     @Override
