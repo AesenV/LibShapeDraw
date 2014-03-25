@@ -180,5 +180,5 @@ The current project, maintained by Aesen, can be found at
 [github.com/AesenV/LibShapeDraw-1.7](https://github.com/AesenV/LibShapeDraw-1.7).
 Anyone is free to open an issue.
 
-If you're more the type for live support, ping aesen on the FreeNode IRC, or join
+If you're more the type for live support, ping aesen on the [EsperNet](http://esper.net) IRC, or join
 the #augment channel there.
