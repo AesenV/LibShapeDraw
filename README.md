@@ -1,4 +1,4 @@
-Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gameminers.com/LibShapeDraw/javadoc) | [Downloads](https://github.com/AesenV/LibShapeDraw-1.7/downloads) | [Cutting-Edge Downloads](http://ci.gameminers.com/LibShapeDraw) ]
+Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gameminers.com/LibShapeDraw/javadoc) | [Releases](https://github.com/AesenV/LibShapeDraw-1.7/releases) | [Cutting-Edge Releases](http://ci.gameminers.com/LibShapeDraw) ]
 
 [![Build Status](http://ci.gameminers.com/buildStatus/icon?job=LibShapeDraw)](http://ci.gameminers.com/job/LibShapeDraw/)
 
