@@ -2,6 +2,8 @@ Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gamemine
 
 [![Build Status](http://ci.gameminers.com/buildStatus/icon?job=LibShapeDraw)](http://ci.gameminers.com/job/LibShapeDraw/)
 
+**This fork is no longer maintained.** Please see [Xaero's superior fork](https://github.com/xaeroverse/LibShapeDraw), which supports LiteLoader and will actually be maintained. If that one stops being maintained, this repository will be revived.
+
 # For Players
 
 LibShapeDraw is a Minecraft client mod that is required by other mods.
