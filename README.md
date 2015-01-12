@@ -1,7 +1,5 @@
 Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gameminers.com/LibShapeDraw/javadoc) | [Releases](https://github.com/AesenV/LibShapeDraw-1.7/releases) | [Cutting-Edge Releases](http://ci.gameminers.com/LibShapeDraw) ]
 
-[![Build Status](http://ci.gameminers.com/buildStatus/icon?job=LibShapeDraw)](http://ci.gameminers.com/job/LibShapeDraw/)
-
 **This fork is intermittently maintained.** If you do not need 1.8 support, or need LiteLoader support, please see [Xaero's superior fork](https://github.com/xaeroverse/LibShapeDraw), which supports LiteLoader and is for 1.7.10.
 
 # For Players
@@ -121,38 +119,9 @@ Here's a quick example:
 
 ## How to add the LibShapeDraw jar to the classpath in MCP
 
-**This needs updating for ForgeGradle**
-
-[Minecraft Coder Pack (MCP)](http://mcp.ocean-labs.de/index.php/MCP_Releases)
-is an excellent tool for creating mods, letting you work with deobfuscated
-Minecraft code. Using external libraries (such as LibShapeDraw) involves a few
-extra steps:
-
-1.  **Get a copy of a LibShapeDraw release jar.** You can use either the normal
-    release or the special dev release (named `LibShapeDraw-VERSION-dev.jar`).
-    Check the [downloads list](https://github.com/AesenV/LibShapeDraw-1.7/downloads)
-    for the latest.
-    
-    The dev release is recommended: either release type will work for
-    *compiling* your mod, but the dev release also lets you *test/debug* your
-    MCP mod without doing a full reobfuscate/deploy.
-
-2.  **Copy the LibShapeDraw jar to `jars/bin`.**
-
-3.  **Edit `conf/mcp.cfg`.** Scroll down to the `[RECOMPILE]` section. There is
-    a property named `ClassPathClient`; this is where we will add a reference to
-    the LibShapeDraw jar. Add `,%(DirJars)s/bin/LibShapeDraw-VERSION-dev.jar`
-    (changing `VERSION` as appropriate) to the end of the line.
-
-4.  **If you are using ModLoader, also copy the LibShapeDraw jar to
-    `jars/mods`.** Skip this step if you're using Forge.
-
-5.  **If you are using Eclipse, add the LibShapeDraw jar to the project's build
-    build path.** Go to the Project Explorer pane and expand `jars/bin`.
-    Right-click the LibShapeDraw jar, Build Path, Add to Build Path.
-    
-    The dev release also includes the source code for convenience, giving you
-    easy access to the Javadocs in your IDE.
+ 1. Add the game|miners Maven repository (`http://mvn.gameminers.com/artifactory/repo`) to your build.gradle if you haven't already.
+ 2. Add `com.gameminers:libshapedraw:1.4-SNAPSHOT:dev` as a dependency in your build.gradle.
+ 3. Refresh your dependencies; if you have IDE integration, this should be automatic or very simple. Otherwise, run `cleanEclipse` (or `cleanIdea`) and then run `eclipse` (or `idea`) again to refresh your IDE files.
 
 ## Documentation
 

@@ -3,11 +3,11 @@ package com.gameminers.lsdtest;
 import libshapedraw.LibShapeDraw;
 import libshapedraw.primitive.Color;
 import libshapedraw.shape.WireframeCuboid;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
-@Mod(name="BLSDT", modid="BLSDT")
+@Mod(name="Basic LibShapeDraw Test", modid="BLSDT")
 public class BasicLibShapeDrawTest {
 	@EventHandler
 	public void postinit(FMLPostInitializationEvent e) {

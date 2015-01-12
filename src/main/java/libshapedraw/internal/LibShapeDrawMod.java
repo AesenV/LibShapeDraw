@@ -3,31 +3,25 @@ package libshapedraw.internal;
 // Edit projects/dev/src/main/java/net/minecraft/src/mod_LibShapeDraw.java
 // and then run the projects/dev/src/main/python/obfuscate.py script.
 
-import java.lang.reflect.Field;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-
 import libshapedraw.MinecraftAccess;
 import libshapedraw.primitive.ReadonlyVector3;
 import libshapedraw.primitive.Vector3;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityClientPlayerMP;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.profiler.Profiler;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.Timer;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.common.MinecraftForge;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
-import cpw.mods.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent;
 
 
 
@@ -52,7 +46,7 @@ public class LibShapeDrawMod implements MinecraftAccess {
     private Timer timer;
     private LSDController controller;
     private Object curWorld;
-    private EntityClientPlayerMP curPlayer;
+    private EntityPlayerSP curPlayer;
     private Integer curDimension;
 
     @Instance("LibShapeDraw")
@@ -148,25 +142,25 @@ public class LibShapeDrawMod implements MinecraftAccess {
 
     @Override
     public MinecraftAccess startDrawing(int mode) {
-        Tessellator.instance.startDrawing(mode);
+        Tessellator.getInstance().getWorldRenderer().startDrawing(mode);
         return this;
     }
 
     @Override
     public MinecraftAccess addVertex(double x, double y, double z) {
-        Tessellator.instance.addVertex(x, y, z);
+        Tessellator.getInstance().getWorldRenderer().addVertex(x, y, z);
         return this;
     }
 
     @Override
     public MinecraftAccess addVertex(ReadonlyVector3 coords) {
-        Tessellator.instance.addVertex(coords.getX(), coords.getY(), coords.getZ());
+        Tessellator.getInstance().getWorldRenderer().addVertex(coords.getX(), coords.getY(), coords.getZ());
         return this;
     }
 
     @Override
     public MinecraftAccess finishDrawing() {
-        Tessellator.instance.draw();
+        Tessellator.getInstance().draw();
         return this;
     }
 
