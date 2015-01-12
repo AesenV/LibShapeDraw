@@ -15,3 +15,10 @@
 
 # Mac
 .DS_Store
+/bin/
+/build/
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
