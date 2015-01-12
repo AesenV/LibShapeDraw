@@ -119,8 +119,8 @@ Here's a quick example:
 
 ## How to add the LibShapeDraw jar to the classpath in MCP
 
- 1. Add the game|miners Maven repository (`http://mvn.gameminers.com/artifactory/repo`) to your build.gradle if you haven't already.
- 2. Add `com.gameminers:libshapedraw:1.4-SNAPSHOT:dev` as a dependency in your build.gradle.
+ 1. Add the game|miners Maven snapshot repository (`http://mvn.gameminers.com/artifactory/repo`) to your build.gradle if you haven't already.
+ 2. Add `com.gameminers:libshapedraw:1.4:dev` as a dependency in your build.gradle.
  3. Refresh your dependencies; if you have IDE integration, this should be automatic or very simple. Otherwise, run `cleanEclipse` (or `cleanIdea`) and then run `eclipse` (or `idea`) again to refresh your IDE files.
 
 ## Documentation
