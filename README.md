@@ -1,4 +1,4 @@
-Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gameminers.com/LibShapeDraw/javadoc) | [Releases](https://github.com/AesenV/LibShapeDraw-1.7/releases) | [Cutting-Edge Releases](http://ci.gameminers.com/LibShapeDraw) ]
+Quick links: [ [For Developers](#for-developers) | [Javadocs](http://ci.gameminers.com/job/LibShapeDraw/javadoc) | [Releases](https://github.com/AesenV/LibShapeDraw-1.7/releases) | [Cutting-Edge Releases](http://ci.gameminers.com/job/LibShapeDraw) ]
 
 **This fork is intermittently maintained.** If you do not need 1.8 support, or need LiteLoader support, please see [Xaero's superior fork](https://github.com/xaeroverse/LibShapeDraw), which supports LiteLoader and is for 1.7.10.
 
@@ -117,7 +117,7 @@ Here's a quick example:
         shape.addTransform(rotate);
         rotate.animateStartLoop(360.0, false, 7000);
 
-## How to add the LibShapeDraw jar to the classpath in MCP
+## How to add the LibShapeDraw jar to the classpath in ForgeGradle
 
  1. Add the game|miners Maven snapshot repository (`http://mvn.gameminers.com/artifactory/repo`) to your build.gradle if you haven't already.
  2. Add `com.gameminers:libshapedraw:1.4:dev` as a dependency in your build.gradle.
@@ -147,9 +147,9 @@ Here's a quick example:
 The original project, managed by bencvt, can be found at
 [github.com/bencvt/LibShapeDraw](https://github.com/bencvt/LibShapeDraw).
 
-The current project, maintained by Aesen, can be found at
-[github.com/AesenV/LibShapeDraw-1.7](https://github.com/AesenV/LibShapeDraw-1.7).
+This project, maintained by Aesen, can be found at
+[github.com/AesenV/LibShapeDraw](https://github.com/AesenV/LibShapeDraw).
 Anyone is free to open an issue.
 
-If you're more the type for live support, ping aesen on the [EsperNet](http://esper.net) IRC, or join
+If you're more the type for live support, send a query to Aesen on the [EsperNet](http://esper.net) IRC network, or join
 the #augment channel there.
